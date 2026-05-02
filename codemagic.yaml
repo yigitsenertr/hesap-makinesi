@@ -11,7 +11,7 @@ workflows:
         script: |
           npx expo prebuild --platform android --clean
           cd android
-          ./gradlew assembleRelease
+          ./gradlew assembleDebug
     artifacts:
       - android/app/build/outputs/**/*.apk
 
